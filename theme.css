@@ -1,0 +1,328 @@
+*{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    color: #222;
+}
+
+html, body{
+    margin: 0;
+    height: 100vh;
+    text-align: center;
+}
+
+
+.header{
+    background-image: url(./img/hero.jpeg);
+    background-repeat: no-repeat;
+    background-position: 50% 60%;
+    background-attachment: scroll;
+    background-size: cover;
+    height: 50vh;
+    margin: 0;
+    padding-top: 70vh;
+}
+.heading {
+    color: #ffffff;
+    display: block;
+    font-family: 'Caveat', cursive;
+    font-size: 6em;
+    font-weight: normal;
+    text-shadow:   0 0  10px #000;
+    margin-bottom: 7em;
+    margin-top:  -4.5em;
+}
+.heading-subtext{
+    color: #fff;
+    display: block;
+    font-family: 'Caveat', cursive;
+    font-size: .6em;
+}
+.fixed-button{
+    background: rgba(20,20,20,.5);
+    border-radius: 1em;
+    bottom: 1em;
+    color: white;
+    font-weight: bold;
+    padding: 1em;
+    position: fixed;
+    right: 1em;
+    text-decoration: none;
+    z-index: 9999;
+}
+.fixed-button::after{
+    content: "\25BE";
+    display: block;
+    font-size: 28px;
+    line-height: 0;
+    margin-bottom: 6px;
+    margin-top: 10px;
+    text-align: center;
+}
+.fixed-button:active,
+.fixed-button:hover{
+    background: rgba(20,20,20,.9);
+}
+.section{
+    margin: 0 auto;
+    max-width:800px;
+    padding: 1em 2.4em;
+}
+.DETALLE{
+    font-family: 'Caveat', cursive;
+    font-size: 4em;
+    margin-top: 0em; /* Reduce el margen superior para subir el título */
+    margin-bottom: 0.3em;
+}
+.welcome{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+}
+    
+.sub-heading {
+    font-family: 'Caveat', cursive;
+    font-size: 4em;
+    margin-top: 5em;
+    margin-bottom: 0.3em;
+}
+.details{
+    margin: 0 auto 8em;
+    margin-bottom: 1.5em;
+    margin-top: 1em;
+   
+}
+.fecha{
+ font-family: Arial, Helvetica, sans-serif;
+ font-size: 1.2em;  
+}
+.locacion{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+}
+.hora{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em; /* Tamaño del texto */
+}
+.details-heading{
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+}
+.fas {
+    font-size: 3em;
+    opacity: .8;
+}
+.resort-image{
+    width: 30%;
+    height: auto;
+    border-radius: 10px; /* Bordes redondeados opcionales */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para resaltar */
+}
+.codigo-image{
+    width: 40%;
+    height: auto;
+    border-radius: 10px; /* Bordes redondeados opcionales */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para resaltar */
+}
+.photo-collage {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    padding: 20px;
+  }
+  
+  .photo img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1; /* Hace que todas las imágenes sean cuadradas */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    object-fit: cover; /* Asegura que la imagen se recorte para llenar el contenedor */
+  }
+  .IMPORTANTE{
+    font-family: 'Caveat', cursive;
+    font-size: 4em; /* Tamaño grande para destacar */
+    color: #4e9662; /* Color rojo para un efecto aterrador */
+    text-align: center; /* Centrar el texto */
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.8); /* Sombra oscura para resaltar */
+    letter-spacing: 2px; /* Espaciado entre letras */
+    margin-top: 1em; /* Espaciado superior */
+    margin-bottom: 0em; /* Espaciado inferior */
+  }
+  .IMPORTANTE2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em; /* Tamaño del texto */
+    line-height: 1.8; /* Mejora el espaciado entre líneas */
+   
+    text-align: center; /* Centra el texto */
+    margin-top: 1em; /* Espaciado superior */
+    margin-bottom: 1.5em; /* Espaciado inferior */
+
+  }
+  .CUENTA  {
+    font-family: 'Caveat', cursive;
+    font-size: 4em;
+    margin-top: 2em;
+    margin-bottom: 1em;
+  }
+  .countdown {
+    display: flex; /* Organiza los elementos en una fila */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    gap: 20px; /* Espaciado entre las casillas */
+    margin-top: 5em; /* Espaciado superior */
+}
+
+.countdown-item {
+    background-color: #f4f4f4; /* Fondo claro */
+    border: 2px solid #ccc; /* Borde de las casillas */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px;
+    text-align: center;
+    width: 100px; /* Ancho fijo para cada casilla */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para resaltar */
+}
+.countdown-item h3 {
+    font-size: 2em; /* Tamaño del número */
+    margin: 0;
+    color: #333; /* Color del número */
+}
+
+.countdown-item p {
+    font-size: 1em; /* Tamaño del texto */
+    margin: 0;
+    color: #666; /* Color del texto */
+    text-transform: uppercase; /* Texto en mayúsculas */
+    font-weight: bold;
+}
+.survey-section {
+    max-width: 600px;
+    margin: 2em auto;
+    padding: 1.5em;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .survey-heading {
+    font-family: 'Caveat', cursive;
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 1em;
+    color: #4e9662;
+  }
+  
+  .survey-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+  
+  .survey-form label {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .survey-form input[type="text"] {
+    font-size: 1em;
+    padding: 0.8em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .options {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .options label {
+    font-size: 1.2em;
+    color: #333;
+  }
+  
+  .survey-form input[type="radio"] {
+    margin-right: 5px;
+  }
+  
+  .submit-button {
+    background-color: #4e9662;
+    color: white;
+    font-size: 1.2em;
+    padding: 0.8em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-button:hover {
+    background-color: #3b7a4e;
+  }
+  .survey-section {
+    max-width: 600px;
+    margin: 2em auto;
+    padding: 1.5em;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .survey-heading {
+    font-family: 'Caveat', cursive;
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 1em;
+    color: #4e9662;
+  }
+  
+  .survey-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+  
+  .survey-form label {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .survey-form input[type="text"],
+  .survey-form input[type="radio"] {
+    font-size: 1em;
+    padding: 0.8em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .options {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .submit-button {
+    background-color: #4e9662;
+    color: white;
+    font-size: 1.2em;
+    padding: 0.8em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-button:hover {
+    background-color: #3b7a4e;
+  }
+@media only screen and (max-width: 600px) {
+   
+ .heading {
+        font-size: 4em;
+    }
+  }
